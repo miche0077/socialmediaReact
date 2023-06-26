@@ -1,4 +1,5 @@
 import { useState } from "react";
+import UserCard from "../userCard/Usercard";
 import "./header.css";
 
 function Header() {
@@ -77,10 +78,11 @@ function Header() {
         <button type="submit">Cadastrar</button>
       </form>
       <div>
-        <h2>Usuários Cadastrados:</h2>
-        <ul>
+        <h2 className="user-cadastro">Usuários Cadastrados:</h2>
+        <ul className="lista">
+          
           {users.map((user, index) => (
-            <li key={index}>{user.nickname}</li>
+            <UserCard key={index} user={user} />
           ))}
         </ul>
       </div>

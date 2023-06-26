@@ -1,0 +1,28 @@
+.user-card {
+display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+    width: 250px;
+    height: 100px;
+    background-color: #744d80bb;
+    border: 1px solid #744d8050; 
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 10px;
+    color: white;
+    
+  }
+  
+  .user-name {
+    margin: 0;
+    font-size: 19px;
+    color:#37243d;
+  }
+  
+  .user-card p {
+    margin: 0;
+  }
+  
+ 
