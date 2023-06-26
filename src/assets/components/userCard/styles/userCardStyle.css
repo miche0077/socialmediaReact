@@ -1,28 +1,63 @@
 .user-card {
-display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
-    width: 250px;
-    height: 100px;
-    background-color: #744d80bb;
-    border: 1px solid #744d8050; 
-    border-radius: 15px;
-    padding: 10px;
-    margin: 10px;
-    margin-bottom: 10px;
-    color: white;
+  width: 250px;
+  height: 100px;
+  background-color: #ac82b9bb;
+  border: 1px solid #744d8050;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px;
+  margin-bottom: 10px;
+  color: white;
+}
+.user-card:hover {
+    background-color: #8f689bcc;
+  }
+  
+.user-name {
+  margin: 0;
+  font-size: 19px;
+  color: #ffff;
+}
+
+.user-card p {
+  margin: 0;
+}
+
+.like-button {
+  border: none;
+  background-color: none;
+  color: #b700ff;
+  cursor: pointer;
+  width: 40px;
+  height: 20px;
+  justify-content: center;
+}
+
+.like-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  color: #b700ff;
+  cursor: pointer;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+.like-button:hover {
+  color: #ff00ff;
+}
+.like-count{
     
-  }
-  
-  .user-name {
-    margin: 0;
-    font-size: 19px;
-    color:#37243d;
-  }
-  
-  .user-card p {
-    margin: 0;
-  }
-  
- 
+        display: flex;
+        align-items:flex-end;
+        margin-left: 5px;
+        font-size: 14px;
+        color: #ffffff;
+    
+      
+}
