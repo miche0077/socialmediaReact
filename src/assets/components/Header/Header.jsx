@@ -1,6 +1,7 @@
 import { useState } from "react";
 import UserCard from "../userCard/Usercard";
 import "./header.css";
+import Search from "../Search/Search";
 
 function Header() {
   const [userName, setUserName] = useState("");
@@ -49,6 +50,7 @@ function Header() {
           Insira o seu nome
         </button>
       </header>
+     
       <form onSubmit={handleSubmit} className="form-container">
         <input
           type="text"
@@ -77,6 +79,7 @@ function Header() {
         {errorMessage && <p className="error-message">{errorMessage}</p>}
         <button type="submit">Cadastrar</button>
       </form>
+      <Search users={users} />
       <div>
         <h2 className="user-cadastro">Usuários Cadastrados:</h2>
         <ul className="lista">

@@ -3,6 +3,8 @@ import { useState } from "react";
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import { faEdit } from "@fortawesome/free-solid-svg-icons";
+
 function UserCard({ user }) {
   const [likes, setLikes] = useState(0);
 
@@ -11,6 +13,9 @@ function UserCard({ user }) {
   };
   return (
     <div className="user-card">
+      <div className="actions">
+        <FontAwesomeIcon icon={faEdit} />
+      </div>
       <h3 className="user-name">{user.nickname}</h3>
       <p>Idade: {user.idade}</p>
       <p>Email: {user.email}</p>
@@ -18,6 +23,7 @@ function UserCard({ user }) {
         <FontAwesomeIcon className="like-button" icon={faHeart} onClick={handleLike}/>
         <span className="like-count">{likes}</span>
       </div>
+      
     </div>
   );
 }

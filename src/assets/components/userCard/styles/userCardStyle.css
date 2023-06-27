@@ -1,8 +1,8 @@
 .user-card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: start;
+  justify-content: flex-start;
+  align-items: flex-start;
   width: 250px;
   height: 100px;
   background-color: #ac82b9bb;
@@ -12,6 +12,7 @@
   margin: 10px;
   margin-bottom: 10px;
   color: white;
+  position: relative;
 }
 .user-card:hover {
     background-color: #8f689bcc;
@@ -61,3 +62,16 @@
     
       
 }
+.actions {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .actions svg {
+    margin-left: 5px;
+    cursor: pointer;
+    color: #b700ff;
+  }
+  
